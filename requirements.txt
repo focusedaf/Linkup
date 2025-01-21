@@ -8,6 +8,7 @@ attrs==24.3.0
 audioread==3.0.1
 babel==2.16.0
 bangla==0.0.2
+bleach==6.2.0
 blinker==1.9.0
 blis==1.2.0
 bnnumerizer==0.0.2
@@ -57,6 +58,7 @@ Jinja2==3.1.5
 jiwer==3.0.5
 joblib==1.4.2
 jsonlines==1.2.0
+kaggle==1.6.17
 kiwisolver==1.4.8
 langcodes==3.5.0
 language_data==1.3.0
@@ -101,6 +103,7 @@ pypiwin32==223
 pysbd==0.3.4
 python-crfsuite==0.9.11
 python-dateutil==2.9.0.post0
+python-slugify==8.0.4
 pyttsx3==2.98
 pytz==2024.2
 pywin32==308
@@ -127,6 +130,7 @@ SudachiPy==0.6.10
 sympy==1.13.1
 tensorboard==2.18.0
 tensorboard-data-server==0.7.2
+text-unidecode==1.3
 thinc==8.3.4
 threadpoolctl==3.5.0
 tokenizers==0.21.0
@@ -146,6 +150,7 @@ Unidecode==1.3.8
 urllib3==2.3.0
 wasabi==1.1.3
 weasel==0.4.1
+webencodings==0.5.1
 Werkzeug==3.1.3
 wrapt==1.17.2
 xxhash==3.5.0
