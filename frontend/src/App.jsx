@@ -1,8 +1,9 @@
 import React from 'react'
 import Login from './components/Login'
 import './App.css'
-import Header from './components/Header'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Layout from './components/Layout'
 // import Signup from './components/Signup'
 export const backendUrl=import.meta.env.VITE_BACKEND_URL
 function App() {
@@ -10,8 +11,9 @@ function App() {
 
   return (
     <div >
-      <Header/>
-      <Login/>
+      <Navbar/>
+      
+      <Layout/>
       <Footer/>
       {/* <Signup/> */}
     
