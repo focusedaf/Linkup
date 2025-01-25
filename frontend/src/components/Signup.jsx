@@ -20,7 +20,7 @@ const Signup = ({setToken}) => {
   const onSubmitHandler = async (e)=>{
     try {
       e.preventDefault();
-      const response =await axios.post(backendUrl + '' ,{email,password})
+      const response =await axios.post(backendUrl + '/api/user/signup' ,{email,password})
 
      if(response.data.success){
         setToken(response.data.token)
