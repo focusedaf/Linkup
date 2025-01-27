@@ -1,7 +1,6 @@
 import {Signup as SignupComponent} from "../Components/index";
 
-
-import React from 'react'
+ 
 
 const Signup = () => {
 
