@@ -4,7 +4,8 @@ import connectDB from "./config/mongodb.js";
 import cors from 'cors'
 import userRouter from "./routes/userRoute.js";
 
-
+import { WebSocket,WebSocketServer } from "ws";
+import { webSocketHandler } from "./webSocketHandler.js";
 const app = express()
 const port = process.env.PORT || 4000
 connectDB();
@@ -20,4 +21,5 @@ app.get('/',(req,res)=>{
     res.send("API WORKING")
 })
 
+webSocketHandler(app)
 app.listen(port, ()=>(console.log('Server started on PORT '+port)))
