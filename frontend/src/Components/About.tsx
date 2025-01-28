@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 const About = () => {
     useEffect(()=>{
@@ -8,10 +8,11 @@ const About = () => {
         } ;
     },[])
   return (
-
-    <div>
-      
+  <>
+    <div className='text-white'>
+        hello
     </div>
+    </>
   )
 }
 
