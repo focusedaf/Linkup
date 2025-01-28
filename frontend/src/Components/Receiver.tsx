@@ -3,7 +3,7 @@
 const Receiver = () => {
   return (
     <div>
-      
+      message received
     </div>
   )
 }

@@ -4,7 +4,8 @@ import { Footer, Navbar } from './Components'
 function App() { 
   return (
     < >
-      
+      <Navbar/>
+      <Footer/>
     </>
   )
 }
