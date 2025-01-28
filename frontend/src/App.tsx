@@ -1,14 +1,16 @@
 import './App.css'
- 
-import Navbar from './Components/Navbar'
+import { Footer, Navbar } from './Components'
+
 function App() {
    
 
   return (
     <>
-       <Navbar/>
+      <Navbar />
+      {/* main content */}
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App
