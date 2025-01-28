@@ -1,11 +1,11 @@
 import './App.css'
-import { Footer, Navbar } from './Components'
+import {  Chatbox } from './Components'
 
 function App() { 
   return (
     < >
-      <Navbar/>
-      <Footer/>
+      
+      <Chatbox/>
     </>
   )
 }
