@@ -201,3 +201,9 @@ body {
   height: 300px; /* or whatever height you need */
   width: 100%;
 }
+.about-container{
+  
+    background-color: #03045e;
+    height: 100vh;
+  
+}
