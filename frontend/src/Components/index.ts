@@ -7,6 +7,7 @@ import About from "./About";
 import Calling from "./Calling";
 import Receiver from "./Receiver";
 import Chatbox from "./Chatbox";
+import SplashScreen from "./SplashScreen/SplashScreen";
  
 export {
     Button,
@@ -17,7 +18,8 @@ export {
     About,
     Receiver,
     Calling,
-    Chatbox
+    Chatbox,
+    SplashScreen
    
 
 }

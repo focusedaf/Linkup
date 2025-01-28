@@ -1,6 +1,6 @@
 const Chatbox = () => {
   return (
-    <div className="w-[22rem] sm:w-[25rem] rounded-md px-2">
+    <div className="w-[22rem] sm:w-[25rem] rounded-md px-2 ">
       <div className="relative">
         {/* chatbox header */}
         <div className="text-white bg-black p-4 rounded-md">Chat</div>

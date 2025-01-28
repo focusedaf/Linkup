@@ -1,11 +1,14 @@
 import './App.css'
-import {  Chatbox } from './Components'
+import {  Chatbox as ChatboxComponent } from './Components/index'
+import {SplashScreen as SplashScreenComponent} from './Components/index'
 
 function App() { 
   return (
     < >
       
-      <Chatbox/>
+      <SplashScreenComponent onAnimationEnd={function (): void {
+        throw new Error('Function not implemented.')
+      } }/>
     </>
   )
 }

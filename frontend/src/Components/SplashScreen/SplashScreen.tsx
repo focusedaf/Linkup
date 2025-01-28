@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './splash.css'
 
-const SplashScreen = ({ onAnimationEnd }) => {
+const SplashScreen = ({ onAnimationEnd }:{ onAnimationEnd: () => void }) => {
   const [isClosing, setIsClosing] = useState(false);
   const [progress, setProgress] = useState(0);
 
