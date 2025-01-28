@@ -6,9 +6,7 @@ function App() {
   return (
     < >
       
-      <SplashScreenComponent onAnimationEnd={function (): void {
-        throw new Error('Function not implemented.')
-      } }/>
+      <SplashScreenComponent onAnimationEnd={function (): void {throw new Error('Function not implemented.') } }/>
     </>
   )
 }
