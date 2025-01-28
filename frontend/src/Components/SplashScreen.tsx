@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import './splash.css'
+import '../App.css'
 
 const SplashScreen = ({ onAnimationEnd }:{ onAnimationEnd: () => void }) => {
+
   const [isClosing, setIsClosing] = useState(false);
   const [progress, setProgress] = useState(0);
 
@@ -12,7 +13,7 @@ const SplashScreen = ({ onAnimationEnd }:{ onAnimationEnd: () => void }) => {
         if (prev < 100) return prev + 1;
         return prev;
       });
-    }, 3000); // Will take 3 seconds to reach 100%
+    }, 30); // Will take 3 seconds to reach 100%
 
     const timer = setTimeout(() => {
       setIsClosing(true);
@@ -30,14 +31,12 @@ const SplashScreen = ({ onAnimationEnd }:{ onAnimationEnd: () => void }) => {
   }, [onAnimationEnd]);
 
   return (
-    <div className={`w-full h-screen flex items-center justify-center bg-black fixed top-0 left-0 transition-opacity duration-3000 ${isClosing ? 'opacity-0' : 'opacity-100'}`}>
-      <div className="text-center">
-        <h2 className="text-xl font-light tracking-wider mb-8 text-white animate-fadeIn">
-          Under Development
-        </h2>
-        <div className="w-48 h-1 bg-white/10 mx-auto rounded overflow-hidden">
+    <div className={`splash-screen ${isClosing ? 'fade-out' : ''}`}>
+      <div className="fade-in-out">
+        <h2>  <span/> Under Development</h2>
+        <div className="loading-bar-container">
           <div 
-            className="h-full bg-white rounded transition-all duration-3000"
+            className="loading-bar" 
             style={{ width: `${progress}%` }}
           />
         </div>

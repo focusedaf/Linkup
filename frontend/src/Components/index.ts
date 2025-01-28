@@ -7,7 +7,7 @@ import About from "./About";
 import Calling from "./Calling";
 import Receiver from "./Receiver";
 import Chatbox from "./Chatbox";
-import SplashScreen from "./SplashScreen/SplashScreen";
+import SplashScreen from "./SplashScreen";
  
 export {
     Button,
