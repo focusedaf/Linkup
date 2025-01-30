@@ -5,9 +5,10 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import About from "./About";
 import Calling from "./Calling";
-import Receiver from "./Receiver";
+ 
 import Chatbox from "./Chatbox";
 import SplashScreen from "./SplashScreen";
+ 
  
 export {
     Button,
@@ -16,10 +17,10 @@ export {
     Navbar,
     Footer,
     About,
-    Receiver,
+   
     Calling,
     Chatbox,
-    SplashScreen
-   
+    SplashScreen,
+     
 
 }

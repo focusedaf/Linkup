@@ -1,29 +1,22 @@
-import { useEffect, useState } from 'react'
+import {Route,Routes} from 'react-router-dom'
 import './App.css'
-import {  About } from './Components/index'
-import {SplashScreen as SplashScreenComponent} from './Components/index'
+import { Home } from 'lucide-react'
+import CallPage from './Pages/CallPage'
+import  Login  from './Pages/Login'
+import Signup from './Pages/Signup'
+import About from './Pages/About'
+
 
 function App() { 
-  const [loading,setLoading] = useState(true)
-  useEffect(()=>{
-    const timer = setTimeout(() => {
-      setLoading(false); // Hide splash screen after the timer
-    }, 2000); // Example: 2 seconds splash duration
-
-    return () => clearTimeout(timer); // Cleanup timer
-
-  })
+  
   return (
-    < >
-       {loading ? (
-         <SplashScreenComponent onAnimationEnd={function (): void {throw new Error('Function not implemented.') } }/> // Show SplashScreen while loading is true
-      ) : (
-        <>
-          
-        </>
-      )}
-     
-    </>
+   <Routes>
+    <Route path='/' element={<Home/>}></Route>
+    <Route path='/call' element={<CallPage/>}></Route>
+    <Route path='/login' element={<Login/>}></Route>
+    <Route path='/signup' element={<Signup/>}></Route>
+    <Route path='/about' element={<About/>}></Route>
+   </Routes>
   )
 }
 
