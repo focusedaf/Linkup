@@ -4,7 +4,7 @@ import connectDB from "./config/mongodb.js";
 import cors from 'cors'
 import userRouter from "./routes/userRoute.js";
 
-import { WebSocket,WebSocketServer } from "ws";
+ 
 import { webSocketHandler } from "./webSocketHandler.js";
 const app = express()
 const port = process.env.PORT || 4000
