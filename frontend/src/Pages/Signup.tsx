@@ -1,12 +1,18 @@
-import {Signup as SignupComponent} from "../Components/index";
+import { useEffect } from "react"
 
- 
 
 const Signup = () => {
-
+    useEffect(() => {
+        
+        document.body.style.overflow = "hidden";
+    
+        return () => {
+          document.body.style.overflow = "auto";
+        };
+      }, []);
   return (
     <div>
-      <SignupComponent/>
+      signup
     </div>
   )
 }
