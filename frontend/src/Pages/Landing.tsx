@@ -9,7 +9,7 @@ const Landing = () => {
     <>
       <Navbar />
       <div className="bg-black absolute left-0 right-0 top-0 flex justify-start items-center min-h-screen pl-10">
-        {/* left part of the home page */}
+        {/* left part of the page */}
         <div className="relative">
           {/* main heading */}
           <div className="text-4xl font-bold text-left mt-4">
@@ -36,6 +36,22 @@ const Landing = () => {
               <VscArrowRight className="w-6 h-6 absolute right-2 top-1/2 transform -translate-y-1/2" />
               Get Started
             </button>
+          </div>
+        </div>
+
+        {/* right side of the page */}
+        <div className="bg-black grid grid-cols-2 gap-3  h-screen w-full md:w-1/2 md:ml-auto  p-6 sm:p-20 ">
+          <div className="bg-white rounded-xl flex items-center justify-center  sm:row-span-2">
+            
+          </div>
+          <div className="bg-white rounded-xl flex items-center justify-center  sm:row-span-4">
+            
+          </div>
+          <div className="bg-white rounded-xl flex items-center justify-center sm:row-span-4">
+            
+          </div>
+          <div className="bg-white rounded-xl flex items-center justify-center sm:row-span-2">
+            
           </div>
         </div>
       </div>
