@@ -1,12 +1,11 @@
 import {Route,Routes} from 'react-router-dom'
 import './App.css'
-import { Home } from 'lucide-react'
+
 import CallPage from './Pages/CallPage'
 import  Login  from './Pages/Login'
 import Signup from './Pages/Signup'
 import About from './Pages/About'
-import Navbar from './Components/Navbar'
-import Footer from "./Components/Footer";
+import Home from './Pages/Home'
 
 function App() { 
   
