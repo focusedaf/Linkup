@@ -1,4 +1,4 @@
-import { About as AboutComponent}  from "../Components/index"
+ 
 import { useEffect } from "react"
 import '../App.css'
 const About = () => {
@@ -10,7 +10,7 @@ const About = () => {
   },[])
   return (
     <div className="bg-blue-900">
-      <AboutComponent/>
+       
     </div>
   )
 }
