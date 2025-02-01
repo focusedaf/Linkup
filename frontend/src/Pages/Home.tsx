@@ -1,4 +1,4 @@
-import { Footer, Navbar, SplashScreen as SplashScreenComponent } from "../Components/index";
+import { Footer, Landing, Navbar, SplashScreen as SplashScreenComponent } from "../Components/index";
 import { useEffect , useState } from "react";
 
 
@@ -20,6 +20,7 @@ const Home = () => {
       ) : (
         <>
           <Navbar/>
+          <Landing/>
           <Footer/>
         </>
       )}
