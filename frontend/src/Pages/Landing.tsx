@@ -2,6 +2,7 @@ import {
   Footer,
   Navbar
 } from "../Components/index";
+import { VscArrowRight } from "react-icons/vsc";
 
 const Landing = () => {
   return (
@@ -31,7 +32,8 @@ const Landing = () => {
 
           {/* get started button */}
           <div className="relative mt-6">
-            <button className="bg-blue-700 text-white rounded-xl px-4 py-2 absolute left-0">
+            <button className="bg-blue-700 text-white rounded-xl px-4 py-2 pr-10 flex items-center relative">
+              <VscArrowRight className="w-6 h-6 absolute right-2 top-1/2 transform -translate-y-1/2" />
               Get Started
             </button>
           </div>
