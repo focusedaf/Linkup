@@ -10,7 +10,6 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 right-0 w-full p-5 z-50 flex justify-between items-center bg-inherit">
-
       {/* logo */}
       <div className="flex">
         <span className="text-xl cursor-pointer text-white">Linkup</span>
@@ -64,7 +63,7 @@ const Navbar = () => {
             <FaUserCircle className="text-white text-xl cursor-pointer" />
             <button
               onClick={() => setIsLoggedIn(false)}
-              className="bg-gradient-to-t from-blue-500 to-gray-300 border border-gradient-to-r from-bg-gray-100 to-gray-300 rounded-xl px-4 py-2 text-white cursor-pointer"
+              className="bg-gradient-to-t from-blue-500 to-gray-300  border border-gradient-to-r from-bg-gray-100 to-gray-300 rounded-xl px-4 py-2 text-white cursor-pointer"
             >
               Logout
             </button>
@@ -72,19 +71,19 @@ const Navbar = () => {
         ) : (
           //  login/signup button
           <div className="flex items-center justify-between space-x-4 ">
-             
-              <button
-                onClick={() => setIsLoggedIn(true)}
-                className="bg-white rounded-xl px-4 py-2  text-black cursor-pointer"
-              >
-                Login
-              </button><button
-                onClick={()=>(navigate('/signup'))}
-                className="bg-gradient-to-t from-blue-500 to-gray-300 rounded-xl px-4 py-2 text-white cursor-pointer"
-              >
-                Signup
-              </button>
-              </div>
+            <button
+              onClick={() => setIsLoggedIn(true)}
+              className="bg-white rounded-xl px-4 py-2  text-black cursor-pointer"
+            >
+              Login
+            </button>
+            <button
+              onClick={() => navigate("/signup")}
+              className="bg-gradient-to-t from-blue-500 to-gray-300 rounded-xl px-4 py-2 text-white cursor-pointer"
+            >
+              Signup
+            </button>
+          </div>
         )}
       </div>
     </div>
