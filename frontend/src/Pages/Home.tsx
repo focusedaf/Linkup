@@ -13,7 +13,7 @@ const Home = () => {
 
   })
   return (
-    <div>
+    <div className="w-screen min-h-screen absolute top-0 left-0 bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background">
      
        {loading ? (
          <SplashScreenComponent onAnimationEnd={function (): void {throw new Error('Function not implemented.') } }/> // Show SplashScreen while loading is true
