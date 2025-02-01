@@ -31,7 +31,6 @@ const Signup = () => {
 
         <form method="#" action="#" className="flex flex-col">
           <div className="relative flex justify-between">
-             
             <UserIcon className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2 " />
             <input
               type="text"
@@ -39,15 +38,13 @@ const Signup = () => {
               className="p-3 pl-15 mb-4 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 "
               required
             />
-           
-            
+
             <input
               type="text"
               placeholder="Last Name"
               className="p-3 pl-15 mb-4 w-full rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 "
               required
             />
-             
           </div>
 
           <div className="relative">
@@ -60,7 +57,7 @@ const Signup = () => {
             />
           </div>
           <div className="relative">
-            <EnvelopeIcon className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2  " />
+            <UserIcon className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2  " />
             <input
               type="text"
               placeholder="Username"
@@ -77,7 +74,6 @@ const Signup = () => {
               required
             />
           </div>
-          
 
           <div className="flex justify-center mt-2 mb-4 text-sm">
             <input
@@ -96,24 +92,25 @@ const Signup = () => {
           </div>
           <div className=" w-full relative">
             <FcGoogle className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2 " />
-            <button
-              
-              className="p-3 pl-15  mb-4 w-full rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 "> Signup With Google
-              
-           </button>
+            <button className="p-3 pl-15  mb-4 w-full rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 ">
+              {" "}
+              Signup With Google
+            </button>
           </div>
           <div className="relative">
             <FaGithub className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2 " />
-            <button className="p-3 pl-15  mb-4 w-full rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 "> Signup With Github</button>
+            <button className="p-3 pl-15  mb-4 w-full rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 ">
+              {" "}
+              Signup With Github
+            </button>
           </div>
-          <div className="flex items-center justify-center"> 
-          <button className="  mt-4 p-3 w-1/3 cursor-pointer font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:scale-105 hover:brightness-110 rounded-lg shadow-lg transition duration-300 ">
-            Sign up
-          </button>
+          <div className="flex items-center justify-center">
+            <button className="  mt-4 p-3 w-1/3 cursor-pointer font-semibold bg-gradient-to-r from-blue-500 to-blue-700 hover:scale-105 hover:brightness-110 rounded-lg shadow-lg transition duration-300 ">
+              Sign up
+            </button>
           </div>
         </form>
       </div>
-       
     </div>
   );
 }

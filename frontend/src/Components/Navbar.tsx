@@ -63,7 +63,7 @@ const Navbar = () => {
             <FaUserCircle className="text-white text-xl cursor-pointer" />
             <button
               onClick={() => setIsLoggedIn(false)}
-              className="bg-gradient-to-t from-blue-500 to-gray-300  border border-gradient-to-r from-bg-gray-100 to-gray-300 rounded-xl px-4 py-2 text-white cursor-pointer"
+              className="bg-gradient-to-t from-blue-500 to-gray-300  border border-gradient-to-r from-bg-gray-100 to-gray-400 rounded-xl px-4 py-2 text-white cursor-pointer"
             >
               Logout
             </button>
@@ -73,13 +73,13 @@ const Navbar = () => {
           <div className="flex items-center justify-between space-x-4 ">
             <button
               onClick={() => setIsLoggedIn(true)}
-              className="bg-white rounded-xl px-4 py-2  text-black cursor-pointer"
+              className="bg-white rounded-xl px-4 py-2  text-black cursor-pointer bg-gradient-to-t from-bg-white to-gray-400"
             >
               Login
             </button>
             <button
               onClick={() => navigate("/signup")}
-              className="bg-gradient-to-t from-blue-500 to-gray-300 rounded-xl px-4 py-2 text-white cursor-pointer"
+              className="bg-gradient-to-t from-blue-500 to-gray-300 rounded-xl from-bg-gray-100 to-gray-400 px-4 py-2 text-white cursor-pointer"
             >
               Signup
             </button>
