@@ -12,7 +12,7 @@ const Login = () => {
   }, []);
 
   return (
-    <div className="absolute top-0 left-0 flex min-h-screen w-screen flex items-center justify-center bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background w-full">
+    <div className="absolute top-0 left-0 min-h-screen w-screen flex items-center justify-center bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background ">
       <div className="bg-[#121826] max-w-[700px] text-center p-10 rounded-xl shadow-2xl">
         <h1 className="text-white text-3xl font-bold mb-2 ">
           Welcome to{" "}
