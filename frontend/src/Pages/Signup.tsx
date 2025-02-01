@@ -14,7 +14,7 @@ const Signup = () => {
       }, []);  // empty dependency array means this effect runs only on mount/unmount
 
   return (
-    <div className="flex min-h-screen justify-center items-center bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-gray-300 to-blue-900 ">
+    <div className="absolute top-0 left-0 flex min-h-screen w-screen justify-center items-center bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-gray-300 to-blue-900 ">
       <div className="bg-[#121826] max-w-[700px] text-center p-10 rounded-xl shadow-2xl">
         <h2 className="text-white text-3xl font-bold mb-2 font-serif ">
           Create an account

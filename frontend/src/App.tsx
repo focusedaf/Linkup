@@ -10,6 +10,7 @@ import About from './Pages/About'
 function App() { 
   
   return (
+    <div className='w-full'>
    <Routes>
     <Route path='/' element={<Home/>}></Route>
     <Route path='/call' element={<CallPage/>}></Route>
@@ -17,6 +18,7 @@ function App() {
     <Route path='/signup' element={<Signup/>}></Route>
     <Route path='/about' element={<About/>}></Route>
    </Routes>
+   </div>
   )
 }
 
