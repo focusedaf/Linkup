@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { LockClosedIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
+import {FcGoogle } from 'react-icons/fc'
+import {FaGithub} from 'react-icons/fa'
 
 const Login = () => {
   useEffect(() => {
@@ -10,8 +12,8 @@ const Login = () => {
   }, []);
 
   return (
-    <div className="absolute top-0 left-0 flex min-h-screen w-screen flex items-center justify-center bg-[radial-gradient(circle_at_bottom,_var(--tw-gradient-stops))] from-gray-300 to-blue-900 w-full">
-      <div className="bg-[#121826] max-w-[700px] text-center p-10 rounded-xl shadow-2xl">
+    <div className="absolute top-0 left-0 flex min-h-screen w-screen flex items-center justify-center bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background w-full">
+      <div className="backdrop-blur-md max-w-[700px] text-center p-10 rounded-xl md:border border-white shadow-2xl">
         <h1 className="text-white text-3xl font-bold mb-2 ">
           Welcome to{" "}
           <span className="text-blue-500 font-bold">Linkup</span>
@@ -42,6 +44,18 @@ const Login = () => {
               className="p-3 pl-15 mb-4 w-full rounded-md bg-[#0D1B2A] border border-[#1B2A49] shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 "
               required
             />
+          </div>
+          <div className=" w-full relative">
+            <FcGoogle className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2 " />
+            <button
+              
+              className="p-3 pl-15  mb-4 w-full rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 "> Signup With Google
+              
+           </button>
+          </div>
+          <div className="relative">
+            <FaGithub className="w-6 h-6 absolute left-3 top-1/3 transform -translate-y-1/2 " />
+            <button className="p-3 pl-15  mb-4 w-full rounded-md  focus:outline-none focus:ring-2 focus:ring-blue-400 border border-gray-400 "> Signup With Github</button>
           </div>
 
           <div className="flex justify-between items-center mb-4">
