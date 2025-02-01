@@ -14,7 +14,6 @@ function App() {
     <div className="w-full">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        
         <Route path="/call" element={<CallPage />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
