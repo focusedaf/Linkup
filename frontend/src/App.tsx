@@ -12,8 +12,8 @@ function App() {
   
   return (
     <div className="w-full">
-      <Navbar />
-      <Footer/>
+     
+    
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/call" element={<CallPage />}></Route>
