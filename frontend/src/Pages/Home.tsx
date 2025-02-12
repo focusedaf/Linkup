@@ -1,9 +1,9 @@
 import {
   Footer,
-  Navbar,Card
+  Navbar,Card,Button
   // Landing,SplashScreen as SplashScreenComponent,
 } from "../Components/index";
-import { useEffect , useState } from "react";
+// import { useEffect , useState } from "react";
 
 
 const Home = () => {
@@ -34,6 +34,7 @@ const Home = () => {
       <>
         <Navbar />
         <Card/>
+        <Button />
         <Footer />
       </>
     </div>

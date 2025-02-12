@@ -4,8 +4,7 @@ import Login from "./Signup";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Landing from "./Landing";
-import Calling from "./Calling";
- 
+import Calling from "./Calling"; 
 import Chatbox from "./Chatbox";
 import SplashScreen from "./SplashScreen";
 import SignedInView from "./SignedInView";
