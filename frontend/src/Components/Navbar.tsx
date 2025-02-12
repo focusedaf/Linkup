@@ -1,93 +1,102 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-import { FaUserCircle } from "react-icons/fa"; 
+import { Link, NavLink, useNavigate } from "react-router-dom"; 
 import {FiBell} from "react-icons/fi"
-import { useNavigate } from "react-router-dom";
+import { Menu, UserCircle,ChevronLeft } from "lucide-react";
+import {ExpandingSearch} from "../Components/index";
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
-
+  const navItems = [
+    { name: "Home", slug: "/", active: true },
+    { name: "Features", slug: "/features", active: true },
+    { name: "Help", slug: "/help", active: true },
+    { name: "About us", slug: "/about", active: true },
+    { name: "Try A Demo", slug: "/demo", active: true },
+    // the following needs authstatus i think
+    // { name: "Friends", slug: "/friends", active: false },
+    // { name: "Chat", slug: "/chat", active: false },
+    // { name: "Vibes", slug: "/vibes", active: false },
+    // { name: "Events", slug: "/events", active: false },
+  ];
   return (
-    <div className="fixed top-0 left-0 right-0 w-full p-5 z-50 flex justify-between items-center bg-inherit">
+    <div className="bg-inherit flex w-full p-5 justify-between items-center  ">
       {/* logo */}
-      <div className="flex">
-        <span className="text-xl cursor-pointer text-white">Linkup</span>
+      <Link to={"/"} className="text-4xl font-medium">
+        Linkup
+      </Link>
+
+      <div className="hidden md:block ">
+        <div className="hidden md:flex gap-5 text-gray-300 bg-inherit p-4 rounded-2xl items-center">
+          <ul className="flex gap-5">
+            {navItems.map((item) =>
+              item.active ? (
+                <li key={item.name}>
+                  <button
+                    onClick={() => navigate(item.slug)}
+                    className="inline-block px-4 py-2 duration-200 hover:bg-white hover:text-black rounded-full cursor-pointer "
+                  >
+                    {item.name}
+                  </button>
+                </li>
+              ) : null
+            )}
+          </ul>
+        </div>
       </div>
 
-      {/* since beech ke tabs whatevs change horahe hai use ternary op to check the condition lol */}
-      {isLoggedIn ? (
-        // signed-in navbar
-        <div className="flex items-center backdrop-blur-xl bg-gray/50 rounded-xl p-3 px-10 sm:ml-6">
-          <div className="flex gap-6">
-            <NavLink to="/friends" className="text-white font-semibold">
-              Friends
-            </NavLink>
-            <NavLink to="/chat" className="text-white font-semibold">
-              Chat
-            </NavLink>
-            <NavLink to="/vibes" className="text-white font-semibold">
-              Vibes
-            </NavLink>
-            <NavLink to="/events" className="text-white font-semibold">
-              Events
-            </NavLink>
-          </div>
-        </div>
-      ) : (
-        //  pre-login navbar
-        <div className="flex items-center backdrop-blur-xl bg-black/50 rounded-xl p-3 px-10 sm:ml-6">
-          <div className="flex gap-6">
-            <NavLink to="/" className="text-white font-semibold">
-              Features
-            </NavLink>
-            <NavLink to="/" className="text-white font-semibold">
-              Help
-            </NavLink>
-            <NavLink to="/" className="text-white font-semibold">
-              Try A Demo
-            </NavLink>
-            <NavLink to="/" className="text-white font-semibold">
-              About Us
-            </NavLink>
-          </div>
-        </div>
-      )}
+      <div className="flex items-center gap-4 md:gap-6">
+        <ExpandingSearch />
+        <button className="p-2 hover:bg-gray-800 rounded-full transition-colors duration-200">
+          <UserCircle className="w-5 h-5 md:hidden cursor-pointer" />
+        </button>
+        <button className="p-2 hover:bg-gray-800 rounded-full transition-colors duration-200">
+          <FiBell className="w-5 h-5 md:hidden cursor-pointer" />
+        </button>
+        <button className="p-2 hover:bg-gray-800 rounded-full transition-colors duration-200">
+          <Menu
+            onClick={() => setIsLoggedIn(true)}
+            className="w-6 h-6 cursor-pointer text-white hover:text-white md:hidden"
+          />
+        </button>
+      </div>
 
-      {/* right-side section */}
-      <div className="flex items-center space-x-4">
-        {isLoggedIn ? (
-          // signed-in user icons
-          <>
-            <FiBell className="text-white text-xl cursor-pointer" />
-            <FaUserCircle className="text-white text-xl cursor-pointer" />
-            <button
-              onClick={() => setIsLoggedIn(false)}
-              className="bg-gradient-to-t from-blue-500 to-gray-300  border border-gradient-to-r from-bg-gray-100 to-gray-400 rounded-xl px-4 py-2 text-white cursor-pointer"
-            >
-              Logout
-            </button>
-          </>
-        ) : (
-          //  login/signup button
-          <div className="flex items-center justify-between space-x-4 ">
-            <button
-              onClick={() => setIsLoggedIn(true)}
-              className="bg-white rounded-xl px-4 py-2  text-black cursor-pointer bg-gradient-to-t from-bg-white to-gray-400"
-            >
-              Login
-            </button>
-            <button
-              onClick={() => navigate("/signup")}
-              className="bg-gradient-to-t from-blue-500 to-gray-300 rounded-xl from-bg-gray-100 to-gray-400 px-4 py-2 text-white cursor-pointer"
-            >
-              Signup
-            </button>
+      <div
+        className={`fixed top-0 right-0 h-screen w-full  bg-black/40 backdrop-blur-md transition-transform transform ${
+          isLoggedIn ? "translate-x-0" : "translate-x-full"
+        } z-50`}
+      >
+        <div className="flex flex-col text-white h-full">
+          <div
+            onClick={() => setIsLoggedIn(false)}
+            className="flex items-center gap-4 p-4 cursor-pointer"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-500" />
+            <p>Back</p>
           </div>
-        )}
+
+          <div className="flex flex-col justify-between h-full">
+            <div className="overflow-y-auto">
+              {navItems.map(
+                (item) =>
+                  item.active && (
+                    <NavLink
+                      key={item.name}
+                      onClick={() => setIsLoggedIn(false)}
+                      className="py-4 pl-6 block hover:bg-gray-800 rounded-md  transition-colors duration-200 "
+                      to={item.slug}
+                    >
+                      {item.name}
+                    </NavLink>
+                  )
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Navbar;
+

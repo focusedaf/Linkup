@@ -1,11 +1,11 @@
 import { VscArrowRight } from "react-icons/vsc";
 import { FaPhoneAlt, FaSearch, FaComment, FaEllipsisV } from "react-icons/fa";
 import { FiUpload } from "react-icons/fi";
-
+import Chat from './Chat'
 const SignedInView = () => {
   return (
     <div className="absolute top-0 left-0 flex flex-col min-h-screen w-screen justify-center items-center bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background">
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col ">
         <div className="font-bold text-3xl space-y-3">
           <p className="text-white">
             Welcome back <span className="text-blue-700">user</span>!
@@ -34,41 +34,7 @@ const SignedInView = () => {
       {/* features */}
       <div className="flex flex-col sm:flex-row justify-evenly items-center w-full ">
         {/* Chat */}
-        <div className="flex flex-col gap-5 backdrop-blur-xl bg-gray/50 rounded-xl p-5">
-          <div className="flex gap-7 justify-center items-center">
-            <p className="text-white font-semibold">Chat</p>
-            <button className="bg-blue-700 text-white rounded-xl px-4 py-2 hover:bg-blue-800 transition cursor-pointer">
-              Create DM
-            </button>
-          </div>
-          <div className="flex flex-col gap-3">
-            <div className="text-white relative pl-10">
-              <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
-              </div>
-              john
-            </div>
-            <div className="text-white relative pl-10">
-              <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
-              </div>
-              jane
-            </div>
-            <div className="text-white relative pl-10">
-              <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
-              </div>
-              mia
-            </div>
-            <div className="text-white relative pl-10">
-              <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
-              </div>
-              peter
-            </div>
-          </div>
-        </div>
-
+       <Chat/>
         {/* friends */}
         <div className="flex flex-col gap-5 backdrop-blur-xl bg-gray/50 rounded-xl p-5">
           <div className="flex gap-7 items-center">
@@ -85,7 +51,10 @@ const SignedInView = () => {
           <div className="flex flex-col gap-3">
             <div className="text-white relative pl-10">
               <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
+                1{" "}
+                <div className="flex w-3 h-3 rounded-full items-center justify-center bg-gray-400 border border-gray-500 absolute right-0 top-1/2">
+                  <div className="flex w-1 h-1 rounded-sm bg-gray-800"></div>
+                </div>
               </div>
               john
               <FaComment className="w-4 h-4 absolute right-10 top-1/2 transform -translate-y-1/2" />
@@ -101,7 +70,10 @@ const SignedInView = () => {
             </div>
             <div className="text-white relative pl-10">
               <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
+                1{" "}
+                <div className="flex w-3 h-3 rounded-full items-center justify-center bg-red-500 border border-red-600 absolute right-0 top-1/2">
+                  <div className="flex w-2 h-1 items-center justify-center bg-red-900"></div>
+                </div>
               </div>
               mia
               <FaComment className="w-4 h-4 absolute right-10 top-1/2 transform -translate-y-1/2" />
@@ -109,7 +81,8 @@ const SignedInView = () => {
             </div>
             <div className="text-white relative pl-10">
               <div className="flex w-7 h-7 rounded-full items-center justify-center bg-amber-200 absolute left-0">
-                1
+                1{" "}
+                <div className="flex w-3 h-3 rounded-full items-center justify-center bg-green-400 border border-gray-400 absolute right-0 top-1/2"></div>
               </div>
               peter
               <FaComment className="w-4 h-4 absolute right-10 top-1/2 transform -translate-y-1/2" />
@@ -119,7 +92,7 @@ const SignedInView = () => {
         </div>
       </div>
 
-      <div className="flex justify-evenly items-center w-full">
+      <div className="flex flex-col sm:flex-row justify-around items-center w-full">
         {/* vibes */}
         <div className="flex flex-col gap-4 backdrop-blur-xl bg-gray/50 rounded-xl p-5">
           <p className="text-white font-semibold">Vibes</p>
