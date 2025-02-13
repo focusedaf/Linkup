@@ -1,6 +1,7 @@
 interface input {
   label: string;
   className?: string;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const Button = ({ label , onClick, className }: input) => {
