@@ -24,7 +24,7 @@ const Signup = () => {
         </h2>
         <p className="mb-5  text-sm">
           Already have an account?{" "}
-          <a href="#" className="text-blue-400 hover:text-blue-500 underline">
+          <a href="/login" className="text-blue-400 hover:text-blue-500 underline">
             Login
           </a>{" "}
         </p>
