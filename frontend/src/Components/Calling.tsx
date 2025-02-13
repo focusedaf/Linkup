@@ -33,7 +33,7 @@ const Calling = () => {
         <div className="">
           <img src={jenny} alt="jenny" className="rounded-2xl " />
           {/* icons */}
-          <div className="flex items-center justify-between gap-4 md:gap-10 m-2">
+          <div className="flex items-center justify-between m-2">
             <div className="flex gap-4 md:gap-6">
               <button className=" p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
                 <FaMicrophone />
@@ -44,7 +44,7 @@ const Calling = () => {
               <button className="  p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
                 <FaUser />
               </button>
-              <button className="px-210  p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
+              <button className="px-100 md:px-210  p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
               <FaCog />
             </button>
             </div>

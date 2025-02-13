@@ -2,7 +2,8 @@ import {
   Footer,
   Navbar,
   Calling,
-  Button,Card,Landing,SplashScreen as SplashScreenComponent,
+  Card,
+  // Button,Landing,SplashScreen as SplashScreenComponent,
 } from "../Components/index";
 
 import { useEffect , useState } from "react";
@@ -18,7 +19,7 @@ const Home = () => {
   //   return () => clearTimeout(timer); // Cleanup timer
 
   // })
-  useEffect(()=>{
+  useEffect(() => {
     document.body.style.overflowX = "hidden" 
     return () =>(
       document.body.style.overflowX ="auto"
@@ -43,7 +44,7 @@ const Home = () => {
       <>
         <Navbar />
         <Card/>
-        <Button />
+        {/* <Button /> */}
         {/* <Calling /> */}
        
       </>
