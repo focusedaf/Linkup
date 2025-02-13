@@ -46,7 +46,6 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-4 md:gap-6">
-        <ExpandingSearch />
         <button className="p-2 hover:bg-gray-800 rounded-full transition-colors duration-200">
           <UserCircle className="w-5 h-5 md:hidden cursor-pointer" />
         </button>
