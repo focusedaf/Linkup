@@ -8,7 +8,6 @@ import Calling from "./Calling";
 import Chatbox from "./Chatbox";
 import SplashScreen from "./SplashScreen";
 import SignedInView from "./SignedInView";
-import ExpandingSearch from "./ExpandingSearch"; 
 import Card from "./Card"; 
  
 export {
@@ -22,6 +21,5 @@ export {
   Chatbox,
   SplashScreen,
   SignedInView,
-  ExpandingSearch,
   Card,
 };
