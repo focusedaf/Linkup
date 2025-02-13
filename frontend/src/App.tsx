@@ -6,7 +6,7 @@ import  Login  from './Pages/Login'
 import Signup from './Pages/Signup'
 import About from './Pages/About'
 import Home from './Pages/Home'
- 
+
 
 function App() { 
   
@@ -19,6 +19,7 @@ function App() {
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/about" element={<About />}></Route>
       </Routes>
+     
     </div>
   );
 }
