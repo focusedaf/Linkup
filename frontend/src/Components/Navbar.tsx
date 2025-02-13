@@ -13,22 +13,22 @@ const Navbar = () => {
     { name: "Help", slug: "/help", active: true },
     { name: "About us", slug: "/about", active: true },
     { name: "Try A Demo", slug: "/demo", active: true },
-    // the following needs authstatus i think
-    // { name: "Friends", slug: "/friends", active: false },
-    // { name: "Chat", slug: "/chat", active: false },
-    // { name: "Vibes", slug: "/vibes", active: false },
-    // { name: "Events", slug: "/events", active: false },
+     
+    { name: "Friends", slug: "/friends", active: true },
+    { name: "Chat", slug: "/chat", active: true },
+    { name: "Vibes", slug: "/vibes", active: true },
+    { name: "Events", slug: "/events", active: true },
   ];
   return (
     <div className="bg-inherit flex w-full p-5 justify-between items-center  ">
       {/* logo */}
-      <Link to={"/"} className="text-4xl font-medium">
-        Linkup
+      <Link to={"/"} className="text-3xl font-medium">
+        Linkup.
       </Link>
 
       <div className="hidden md:block ">
-        <div className="hidden md:flex gap-5 text-gray-300 bg-inherit p-4 rounded-2xl items-center">
-          <ul className="flex gap-5">
+        <div className="hidden md:flex gap-5 text-gray-300 bg-black/50 p-4 rounded-2xl items-center">
+          <ul className="flex gap-5 ">
             {navItems.map((item) =>
               item.active ? (
                 <li key={item.name}>

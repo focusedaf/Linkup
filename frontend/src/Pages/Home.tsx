@@ -4,7 +4,8 @@ import {
   Calling,
   // Button,Card,Landing,SplashScreen as SplashScreenComponent,
 } from "../Components/index";
-// import { useEffect , useState } from "react";
+
+import { useEffect , useState } from "react";
 
 
 const Home = () => {
@@ -17,6 +18,12 @@ const Home = () => {
   //   return () => clearTimeout(timer); // Cleanup timer
 
   // })
+  useEffect(()=>{
+    document.body.style.overflowX = "hidden" 
+    return () =>(
+      document.body.style.overflowX ="auto"
+     )
+   },[])
   return (
     <div className="w-screen min-h-screen absolute top-0 left-0 bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background">
       {/* {loading ? (

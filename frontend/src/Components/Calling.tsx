@@ -1,11 +1,18 @@
 import Button from './Button'
 import jenny from '../assets/jenny.svg'
 import { FaMicrophone, FaVideo, FaCog,FaUser} from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 const Calling = () => {
+  const navigate = useNavigate();
+  const handleClick = () =>{
+    navigate("/about")
+    alert("button Clicked")
+  }
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-linear-to-r from-gradient via-mid to-background">
-      <div className="bg-black rounded p-[300px] w-full max-w-xl md:max-w-7xl m-10 text-white ">
+    <div className=" w-screen h-screen flex flex-col justify-center items-center ">
+      {/* <div className="bg-black rounded p-[300px] w-full max-w-xl md:max-w-7xl m-10 text-white ">  */}
+      <div className="bg-black rounded p-[100px] w-screen md:max-w-9xl m-10 text-white "> 
         {/* logo will be added later */}
         <h2 className="text-white">Get Started</h2>
         <p className="text-gray-400 font-sm md:font-semibold">
@@ -17,6 +24,7 @@ const Calling = () => {
             Live
           </button>
           <Button
+            onClick ={handleClick}
             label="18 others in session"
             className="font-thin text-gray-100 "
           />
@@ -36,11 +44,11 @@ const Calling = () => {
               <button className="  p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
                 <FaUser />
               </button>
-            </div>
-
-            <button className="  p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
+              <button className="px-210  p-2 hover:bg-gray-800 rounded-md transition-colors duration-200">
               <FaCog />
             </button>
+            </div>
+
           </div>
           {/* display field + join button */}
           <div className="flex  items-center gap-4 md:gap-6 m-4">
@@ -53,6 +61,7 @@ const Calling = () => {
       </div>
     </div>
   );
+  //this is gpt code ............................... 
 }
 
 export default Calling

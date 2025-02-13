@@ -9,7 +9,7 @@ const About = () => {
     }
   },[])
   return (
-    <div className="bg-blue-900">
+    <div className="bg-blue-200">
        
     </div>
   )
