@@ -12,7 +12,7 @@ const Calling = () => {
   return (
     <div className=" w-screen h-screen flex flex-col justify-center items-center ">
       {/* <div className="bg-black rounded p-[300px] w-full max-w-xl md:max-w-7xl m-10 text-white ">  */}
-      <div className="bg-black rounded p-[100px] w-screen md:max-w-9xl m-10 text-white "> 
+      <div className=" rounded p-[100px] w-screen md:max-w-9xl m-10 text-white "> 
         {/* logo will be added later */}
         <h2 className="text-white">Get Started</h2>
         <p className="text-gray-400 font-sm md:font-semibold">
@@ -55,13 +55,13 @@ const Calling = () => {
             <div className="bg-gray-900 rounded-md text-gray-400 px-4 py-2 w-full text-left">
               Jenny
             </div>
-            <Button label="join now" className='font-light' />
+            <Button onClick={"Not so fast"} label="join now" className='font-light' />
           </div>
         </div>
       </div>
     </div>
   );
-  //this is gpt code ............................... 
+  
 }
 
 export default Calling
