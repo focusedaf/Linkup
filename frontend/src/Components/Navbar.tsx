@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom"; 
 import {FiBell} from "react-icons/fi"
 import { Menu, UserCircle,ChevronLeft } from "lucide-react";
-import {ExpandingSearch} from "../Components/index";
+
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
