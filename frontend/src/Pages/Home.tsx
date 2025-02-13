@@ -1,7 +1,8 @@
 import {
   Footer,
-  Navbar,Card,Button
-  // Landing,SplashScreen as SplashScreenComponent,
+  Navbar,
+  Calling,
+  // Button,Card,Landing,SplashScreen as SplashScreenComponent,
 } from "../Components/index";
 // import { useEffect , useState } from "react";
 
@@ -33,8 +34,9 @@ const Home = () => {
       )} */}
       <>
         <Navbar />
-        <Card/>
-        <Button />
+        {/* <Card/>
+        <Button /> */}
+        <Calling />
         <Footer />
       </>
     </div>

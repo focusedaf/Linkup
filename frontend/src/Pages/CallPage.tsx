@@ -1,8 +1,8 @@
-
+import { Calling } from "../Components/index";
 const CallPage = () => {
   return (
     <div>
-     call
+     <Calling/>
     </div>
   );
 }
