@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 w-full bg-inherit z-50">
+    <div className="fixed bottom-0 left-0 right-0 w-full bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background z-50">
       <footer className=" w-screen rounded-xl">
         <div className="w-screen p-4 md:py-8 text-center">
           <span className="block text-sm text-gray-500 sm:text-center">

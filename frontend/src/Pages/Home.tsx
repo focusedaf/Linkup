@@ -20,14 +20,11 @@ const Home = () => {
 
   // })
   useEffect(() => {
-    document.body.style.overflowX = "hidden" 
-    return () =>(
-      document.body.style.overflowX ="auto"
-     )
-   },[])
+    document.body.style.overflowX = "hidden";
+    return () => (document.body.style.overflowX = "auto");
+  }, []);
   return (
-    <div className="w-screen min-h-screen absolute top-0 left-0 bg-black from-gradient via-mid to-background">
-    {/* // <div className="w-screen min-h-screen absolute top-0 left-0 bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background"> */}
+    <div className="w-screen min-h-screen absolute top-0 left-0 bg-[radial-gradient(500px_circle_at_bottom,_var(--tw-gradient-stops))] from-gradient via-mid to-background">
       {/* {loading ? (
         <SplashScreenComponent
           onAnimationEnd={function (): void {
@@ -43,10 +40,10 @@ const Home = () => {
       )} */}
       <>
         <Navbar />
-        <Card/>
+        {/* <Card /> */}
         {/* <Button /> */}
         {/* <Calling /> */}
-       
+        <Footer />
       </>
     </div>
   );
