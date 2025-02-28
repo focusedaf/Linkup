@@ -1,6 +1,6 @@
 import { WebSocket, WebSocketServer } from 'ws';
 
-const wss = new WebSocketServer({ port: 8080 });
+export const wss = new WebSocketServer({ port: 8080 });
 
 let senderSocket=  null;
 let receiverSocket = null;
@@ -42,3 +42,4 @@ wss.on('connection', function connection(ws) {
     }
   });
 });
+ 
